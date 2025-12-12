@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tariq Islam | IT Support Analyst</title>
+
+  <!-- SEO META TAGS -->
+  <meta name="description" content="Professional IT Support Analyst specializing in Microsoft 365, Entra ID, Azure Identity, system administration, virtualization, and enterprise troubleshooting. View Tariq Islam’s portfolio, experience, certifications, and IT projects." />
+  <meta name="keywords" content="IT Support Analyst, Technical Support, System Administrator, Microsoft 365, Azure AD, Entra ID, Intune, VMware, Proxmox, IT Resume, Calgary IT, Identity Management, Helpdesk, Cloud Support" />
+  <meta name="author" content="Tariq Islam" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Tariq Islam | IT Support Analyst" />
+  <meta property="og:description" content="Experienced IT Support Analyst with expertise in Microsoft 365, Azure Identity, VMware, RMM systems, and enterprise infrastructure." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tariqul.ca" />
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --primary: #58a6ff;
+      --accent: #7ee787;
+      --text-light: #c9d1d9;
+      --text-muted: #8b949e;
+      --radius: 14px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-light);
+    }
+
+    /* Futuristic background grid */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(rgba(88,166,255,0.05) 1px, transparent 1px),
+                  linear-gradient(90deg, rgba(88,166,255,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    header {
+      padding: 90px 20px;
+      text-align: center;
+      background: radial-gradient(circle at 50% 20%, rgba(88,166,255,0.3), transparent 70%);
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    header h3 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 20px;
+      animation: fadeIn 1s ease; 
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 40px 0 18px;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 3px;
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 28px;
+      border-radius: var(--radius);
+      margin-bottom: 22px;
+      border: 1px solid rgba(88, 166, 255, 0.1);
+      box-shadow: 0 0 20px rgba(88,166,255,0.05);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px rgba(88,166,255,0.15);
+      border-color: rgba(88, 166, 255, 0.3);
+    }
+
+    .job-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .job-company {
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .job-dates {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 6px 0 12px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+
+    /* MOBILE RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      header {
+        padding: 60px 20px;
+      }
+      header h1 {
+        font-size: 2.4rem;
+      }
+      header h3 {
+        font-size: 1.2rem;
+      }
+      .container {
+        padding: 10px;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .card {
+        padding: 20px;
+      }
+      ul {
+        margin-left: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header h3 {
+        font-size: 1rem;
+      }
+      header p {
+        font-size: 0.9rem;
+      }
+      .card {
+        padding: 18px;
+        font-size: 0.92rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+  
+
+    /* LinkedIn Icon Hover Effects */
+    .linkedin-icon svg {
+      transition: 0.3s ease;
+      filter: drop-shadow(0 0 4px rgba(88,166,255,0.4));
+    }
+
+    .linkedin-icon:hover svg {
+      transform: scale(1.2);
+      fill: var(--accent);
+      filter: drop-shadow(0 0 10px rgba(126,231,135,0.8));
+      cursor: pointer;
+    }
+
+  
+
+    /* Email Icon Hover Effects */
+    .email-icon svg {
+      transition: 0.3s ease;
+      filter: drop-shadow(0 0 4px rgba(88,166,255,0.4));
+    }
+
+    .email-icon:hover svg {
+      transform: scale(1.2);
+      fill: var(--accent);
+      filter: drop-shadow(0 0 10px rgba(126,231,135,0.8));
+      cursor: pointer;
+    }
+
+  
+
+    /* Icon Row */
+    .icon-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tariq Islam</h1>
+    <h3>IT Support Analyst</h3>
+    <div class="icon-row">
+      <a href="mailto:contact@tariqul.ca" class="email-icon" title="Email">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#58a6ff" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H4C2.89 4 2 4.89 2 6V18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+        </svg>
+      </a>
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/tariqul19" class="linkedin-icon" title="LinkedIn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#58a6ff" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.98 3.5C4.98 4.60457 4.08457 5.5 2.98 5.5C1.87543 5.5 0.98 4.60457 0.98 3.5C0.98 2.39543 1.87543 1.5 2.98 1.5C4.08457 1.5 4.98 2.39543 4.98 3.5Z"/>
+          <path d="M0.75 8.75H5.25V22.25H0.75V8.75Z"/>
+          <path d="M8.75 8.75H13.08V10.77H13.14C13.74 9.59 15.09 8.34 17.21 8.34C21.14 8.34 22.25 10.93 22.25 14.82V22.25H17.75V15.58C17.75 13.87 17.72 11.69 15.45 11.69C13.14 11.69 12.82 13.57 12.82 15.47V22.25H8.32L8.75 8.75Z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Operating Systems:</strong> Windows 10/11, Windows Server 2016/2019/2022, Linux (Fedora, CentOS), macOS</li>
+        <li><strong>Cloud & Identity Services:</strong> Microsoft 365, Entra ID, Intune, Exchange, SharePoint</li>
+        <li><strong>Remote Support Tools:</strong> Bomgar, AnyDesk, TeamViewer, Quick Assist</li>
+        <li><strong>IT Service Management (ITSM):</strong> ServiceNow, Autotask</li>
+        <li><strong>Administration & Automation:</strong> Active Directory, PowerShell, n8n</li>
+		<li><strong>Virtualization & RMM:</strong> VMware Horizon, Proxmox VE, Datto RMM</li>
+      </ul>
+    </div>
+
+    <h2>Work Experience</h2>
+
+    <div class="card">
+      <div class="job-title">Technical Support Analyst</div>
+      <div class="job-company">ARC Resources Ltd. | Calgary, AB</div>
+      <div class="job-dates">Sep 2024 – Sep 2025</div>
+      <ul>
+        <li>Diagnosed, troubleshot, and resolved hardware and software issues.</li>
+        <li>Performed 150+ OS deployments and upgraded 100+ laptops to Windows 11.</li>
+        <li>Audited licensing, reducing annual costs by $32,000.</li>
+        <li>Supported VMware Horizon applications and user environments.</li>
+        <li>Administered Microsoft 365 environment and security groups.</li>
+        <li>Deployed 1Password to 750+ users organization‑wide.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="job-title">System Administrator</div>
+      <div class="job-company">Comtech Ltd. | Calgary, AB</div>
+      <div class="job-dates">Oct 2023 – May 2024</div>
+      <ul>
+        <li>Streamlined IT workflows using Autotask.</li>
+        <li>Implemented Datto RMM for proactive remediation.</li>
+        <li>Automated tasks with custom scripts, reducing manual workload by 50%.</li>
+        <li>Managed VMware vCenter with 60+ Linux & Windows servers.</li>
+        <li>Migrated 150+ mailboxes from Google Workspace to Exchange Online.</li>
+        <li>Managed Microsoft 365 identities, Teams, licenses, and mailboxes.</li>
+        <li>Deployed multiple SSO integrations via Entra ID.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="job-title">Microsoft Azure Identity Support Engineer</div>
+      <div class="job-company">Sherweb | Calgary, AB</div>
+      <div class="job-dates">Jul 2021 – Sep 2023</div>
+      <ul>
+        <li>Authored documentation decreasing escalations by 40%.</li>
+        <li>Provided technical guidance to a team of 13 engineers.</li>
+        <li>Administered Azure AD Connect and Endpoint Manager.</li>
+        <li>Managed Azure IAM using RBAC roles.</li>
+        <li>Resolved directory sync issues using PowerShell.</li>
+        <li>Maintained 100% SLA compliance.</li>
+        <li>Improved identity management for clients with 500+ users.</li>
+      </ul>
+    </div>
+
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>College Diploma, Computer Systems Technician</strong><br />St. Clair College | Windsor, ON (Aug 2020)</p>
+    </div>
+
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>Microsoft 365 Certified: Fundamentals (MS‑900)</li>
+        <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC‑900)</li>
+        <li>Microsoft Certified: Azure Fundamentals (AZ‑900)</li>
+      </ul>
+    </div>
+
+    <h2>Personal Projects</h2>
+    <div class="card">
+      <p><strong>Homelab Infrastructure</strong></p>
+      <ul>
+        <li>Continuously building and managing a 3‑node Proxmox VE cluster hosting Linux server VMs.</li>
+        <li>Implementing and refining network segmentation while maintaining secure remote access via Cloudflare Tunnel and VPN.</li>
+        <li>Running Zabbix to monitor 30+ endpoints and evolving automated alert workflows.</li>
+        <li>Using Wazuh for ongoing malware, threat, and vulnerability detection across the environment.</li>
+        <li>Maintaining a Technitium DNS server used by all clients and iterating configurations as the homelab expands.</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
